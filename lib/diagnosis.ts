@@ -32,27 +32,27 @@ export const questions: Question[] = [
         options: [
             {
                 label: '肌荒れ・ニキビが治らない',
-                scores: { 'houkei-clinic-a': 0, 'houkei-clinic-b': 0, 'mens-supplement': 0, 'nioi-care': 1, 'skincare': 5, 'houkei-goods': 0, 'datsumo-cream': 0, 'aga-item': 0, 'muscle-diet': 0, 'mens-esthe': 2 },
+                scores: { 'houkei-clinic-a': 0, 'houkei-clinic-b': 0, 'mens-supplement': 0, 'nioi-care': 1, 'skincare': 5, 'houkei-goods': 0, 'datsumo-cream': 0, 'aga-item': 0, 'muscle-diet': 0 },
             },
             {
                 label: '髪が薄くなってきた・抜け毛が増えた',
-                scores: { 'houkei-clinic-a': 0, 'houkei-clinic-b': 0, 'mens-supplement': 0, 'nioi-care': 0, 'skincare': 0, 'houkei-goods': 0, 'datsumo-cream': 0, 'aga-item': 5, 'muscle-diet': 0, 'mens-esthe': 0 },
+                scores: { 'houkei-clinic-a': 0, 'houkei-clinic-b': 0, 'mens-supplement': 0, 'nioi-care': 0, 'skincare': 0, 'houkei-goods': 0, 'datsumo-cream': 0, 'aga-item': 5, 'muscle-diet': 0 },
             },
             {
                 label: 'ムダ毛・ヒゲが気になる',
-                scores: { 'houkei-clinic-a': 0, 'houkei-clinic-b': 0, 'mens-supplement': 0, 'nioi-care': 0, 'skincare': 0, 'houkei-goods': 0, 'datsumo-cream': 5, 'aga-item': 0, 'muscle-diet': 0, 'mens-esthe': 2 },
+                scores: { 'houkei-clinic-a': 0, 'houkei-clinic-b': 0, 'mens-supplement': 0, 'nioi-care': 0, 'skincare': 0, 'houkei-goods': 0, 'datsumo-cream': 5, 'aga-item': 0, 'muscle-diet': 0 },
             },
             {
                 label: 'デリケートゾーンの悩みがある',
-                scores: { 'houkei-clinic-a': 5, 'houkei-clinic-b': 5, 'mens-supplement': 5, 'nioi-care': 0, 'skincare': 0, 'houkei-goods': 5, 'datsumo-cream': 0, 'aga-item': 0, 'muscle-diet': 0, 'mens-esthe': 1 },
+                scores: { 'houkei-clinic-a': 5, 'houkei-clinic-b': 5, 'mens-supplement': 5, 'nioi-care': 0, 'skincare': 0, 'houkei-goods': 5, 'datsumo-cream': 0, 'aga-item': 0, 'muscle-diet': 0 },
             },
             {
                 label: '体臭・ニオイが気になる',
-                scores: { 'houkei-clinic-a': 0, 'houkei-clinic-b': 0, 'mens-supplement': 0, 'nioi-care': 5, 'skincare': 2, 'houkei-goods': 0, 'datsumo-cream': 0, 'aga-item': 0, 'muscle-diet': 0, 'mens-esthe': 1 },
+                scores: { 'houkei-clinic-a': 0, 'houkei-clinic-b': 0, 'mens-supplement': 0, 'nioi-care': 5, 'skincare': 2, 'houkei-goods': 0, 'datsumo-cream': 0, 'aga-item': 0, 'muscle-diet': 0 },
             },
             {
                 label: '体型・筋肉に自信がない',
-                scores: { 'houkei-clinic-a': 0, 'houkei-clinic-b': 0, 'mens-supplement': 2, 'nioi-care': 0, 'skincare': 0, 'houkei-goods': 0, 'datsumo-cream': 0, 'aga-item': 0, 'muscle-diet': 5, 'mens-esthe': 4 },
+                scores: { 'houkei-clinic-a': 0, 'houkei-clinic-b': 0, 'mens-supplement': 2, 'nioi-care': 0, 'skincare': 0, 'houkei-goods': 0, 'datsumo-cream': 0, 'aga-item': 0, 'muscle-diet': 5 },
             },
         ],
     },
@@ -62,19 +62,19 @@ export const questions: Question[] = [
         options: [
             {
                 label: '最近気になり始めた（1年以内）',
-                scores: { 'houkei-clinic-a': 3, 'houkei-clinic-b': 3, 'mens-supplement': 4, 'nioi-care': 4, 'skincare': 5, 'houkei-goods': 4, 'datsumo-cream': 5, 'aga-item': 5, 'muscle-diet': 4, 'mens-esthe': 4 },
+                scores: { 'houkei-clinic-a': 3, 'houkei-clinic-b': 3, 'mens-supplement': 4, 'nioi-care': 4, 'skincare': 5, 'houkei-goods': 4, 'datsumo-cream': 5, 'aga-item': 5, 'muscle-diet': 4 },
             },
             {
                 label: '数年前から気になっている',
-                scores: { 'houkei-clinic-a': 4, 'houkei-clinic-b': 4, 'mens-supplement': 4, 'nioi-care': 4, 'skincare': 4, 'houkei-goods': 4, 'datsumo-cream': 4, 'aga-item': 4, 'muscle-diet': 4, 'mens-esthe': 4 },
+                scores: { 'houkei-clinic-a': 4, 'houkei-clinic-b': 4, 'mens-supplement': 4, 'nioi-care': 4, 'skincare': 4, 'houkei-goods': 4, 'datsumo-cream': 4, 'aga-item': 4, 'muscle-diet': 4 },
             },
             {
                 label: '10年以上ずっと悩んでいる',
-                scores: { 'houkei-clinic-a': 5, 'houkei-clinic-b': 5, 'mens-supplement': 4, 'nioi-care': 4, 'skincare': 3, 'houkei-goods': 5, 'datsumo-cream': 3, 'aga-item': 3, 'muscle-diet': 4, 'mens-esthe': 5 },
+                scores: { 'houkei-clinic-a': 5, 'houkei-clinic-b': 5, 'mens-supplement': 4, 'nioi-care': 4, 'skincare': 3, 'houkei-goods': 5, 'datsumo-cream': 3, 'aga-item': 3, 'muscle-diet': 4 },
             },
             {
                 label: 'ずっとコンプレックスだった',
-                scores: { 'houkei-clinic-a': 5, 'houkei-clinic-b': 5, 'mens-supplement': 5, 'nioi-care': 5, 'skincare': 3, 'houkei-goods': 5, 'datsumo-cream': 4, 'aga-item': 4, 'muscle-diet': 5, 'mens-esthe': 5 },
+                scores: { 'houkei-clinic-a': 5, 'houkei-clinic-b': 5, 'mens-supplement': 5, 'nioi-care': 5, 'skincare': 3, 'houkei-goods': 5, 'datsumo-cream': 4, 'aga-item': 4, 'muscle-diet': 5 },
             },
         ],
     },
@@ -84,19 +84,19 @@ export const questions: Question[] = [
         options: [
             {
                 label: '特に何もしていない',
-                scores: { 'houkei-clinic-a': 4, 'houkei-clinic-b': 3, 'mens-supplement': 5, 'nioi-care': 5, 'skincare': 5, 'houkei-goods': 5, 'datsumo-cream': 5, 'aga-item': 5, 'muscle-diet': 4, 'mens-esthe': 3 },
+                scores: { 'houkei-clinic-a': 4, 'houkei-clinic-b': 3, 'mens-supplement': 5, 'nioi-care': 5, 'skincare': 5, 'houkei-goods': 5, 'datsumo-cream': 5, 'aga-item': 5, 'muscle-diet': 4 },
             },
             {
                 label: '市販品を試したが効果がなかった',
-                scores: { 'houkei-clinic-a': 3, 'houkei-clinic-b': 3, 'mens-supplement': 3, 'nioi-care': 4, 'skincare': 3, 'houkei-goods': 3, 'datsumo-cream': 3, 'aga-item': 3, 'muscle-diet': 4, 'mens-esthe': 4 },
+                scores: { 'houkei-clinic-a': 3, 'houkei-clinic-b': 3, 'mens-supplement': 3, 'nioi-care': 4, 'skincare': 3, 'houkei-goods': 3, 'datsumo-cream': 3, 'aga-item': 3, 'muscle-diet': 4 },
             },
             {
                 label: 'エステやサロンに通ったことがある',
-                scores: { 'houkei-clinic-a': 3, 'houkei-clinic-b': 4, 'mens-supplement': 2, 'nioi-care': 3, 'skincare': 2, 'houkei-goods': 2, 'datsumo-cream': 2, 'aga-item': 2, 'muscle-diet': 5, 'mens-esthe': 5 },
+                scores: { 'houkei-clinic-a': 3, 'houkei-clinic-b': 4, 'mens-supplement': 2, 'nioi-care': 3, 'skincare': 2, 'houkei-goods': 2, 'datsumo-cream': 2, 'aga-item': 2, 'muscle-diet': 5 },
             },
             {
                 label: '病院・クリニックに行ったことがある',
-                scores: { 'houkei-clinic-a': 5, 'houkei-clinic-b': 5, 'mens-supplement': 2, 'nioi-care': 2, 'skincare': 2, 'houkei-goods': 2, 'datsumo-cream': 2, 'aga-item': 2, 'muscle-diet': 3, 'mens-esthe': 3 },
+                scores: { 'houkei-clinic-a': 5, 'houkei-clinic-b': 5, 'mens-supplement': 2, 'nioi-care': 2, 'skincare': 2, 'houkei-goods': 2, 'datsumo-cream': 2, 'aga-item': 2, 'muscle-diet': 3 },
             },
         ],
     },
@@ -106,19 +106,19 @@ export const questions: Question[] = [
         options: [
             {
                 label: 'まずは無料カウンセリングから',
-                scores: { 'houkei-clinic-a': 4, 'houkei-clinic-b': 4, 'mens-supplement': 3, 'nioi-care': 3, 'skincare': 3, 'houkei-goods': 3, 'datsumo-cream': 3, 'aga-item': 3, 'muscle-diet': 3, 'mens-esthe': 4 },
+                scores: { 'houkei-clinic-a': 4, 'houkei-clinic-b': 4, 'mens-supplement': 3, 'nioi-care': 3, 'skincare': 3, 'houkei-goods': 3, 'datsumo-cream': 3, 'aga-item': 3, 'muscle-diet': 3 },
             },
             {
                 label: '月5,000円〜1万円くらい',
-                scores: { 'houkei-clinic-a': 2, 'houkei-clinic-b': 3, 'mens-supplement': 5, 'nioi-care': 5, 'skincare': 5, 'houkei-goods': 5, 'datsumo-cream': 5, 'aga-item': 5, 'muscle-diet': 3, 'mens-esthe': 2 },
+                scores: { 'houkei-clinic-a': 2, 'houkei-clinic-b': 3, 'mens-supplement': 5, 'nioi-care': 5, 'skincare': 5, 'houkei-goods': 5, 'datsumo-cream': 5, 'aga-item': 5, 'muscle-diet': 3 },
             },
             {
                 label: '月1万〜3万円まで出せる',
-                scores: { 'houkei-clinic-a': 4, 'houkei-clinic-b': 4, 'mens-supplement': 4, 'nioi-care': 4, 'skincare': 4, 'houkei-goods': 3, 'datsumo-cream': 4, 'aga-item': 4, 'muscle-diet': 4, 'mens-esthe': 4 },
+                scores: { 'houkei-clinic-a': 4, 'houkei-clinic-b': 4, 'mens-supplement': 4, 'nioi-care': 4, 'skincare': 4, 'houkei-goods': 3, 'datsumo-cream': 4, 'aga-item': 4, 'muscle-diet': 4 },
             },
             {
                 label: '効果があるなら金額は気にしない',
-                scores: { 'houkei-clinic-a': 5, 'houkei-clinic-b': 5, 'mens-supplement': 4, 'nioi-care': 4, 'skincare': 3, 'houkei-goods': 2, 'datsumo-cream': 2, 'aga-item': 3, 'muscle-diet': 5, 'mens-esthe': 5 },
+                scores: { 'houkei-clinic-a': 5, 'houkei-clinic-b': 5, 'mens-supplement': 4, 'nioi-care': 4, 'skincare': 3, 'houkei-goods': 2, 'datsumo-cream': 2, 'aga-item': 3, 'muscle-diet': 5 },
             },
         ],
     },
@@ -128,19 +128,19 @@ export const questions: Question[] = [
         options: [
             {
                 label: '自宅でできるセルフケアがいい',
-                scores: { 'houkei-clinic-a': 1, 'houkei-clinic-b': 1, 'mens-supplement': 5, 'nioi-care': 5, 'skincare': 5, 'houkei-goods': 5, 'datsumo-cream': 5, 'aga-item': 5, 'muscle-diet': 3, 'mens-esthe': 1 },
+                scores: { 'houkei-clinic-a': 1, 'houkei-clinic-b': 1, 'mens-supplement': 5, 'nioi-care': 5, 'skincare': 5, 'houkei-goods': 5, 'datsumo-cream': 5, 'aga-item': 5, 'muscle-diet': 3 },
             },
             {
                 label: 'ネットで注文して自宅に届けてほしい',
-                scores: { 'houkei-clinic-a': 1, 'houkei-clinic-b': 1, 'mens-supplement': 5, 'nioi-care': 5, 'skincare': 5, 'houkei-goods': 5, 'datsumo-cream': 5, 'aga-item': 5, 'muscle-diet': 3, 'mens-esthe': 1 },
+                scores: { 'houkei-clinic-a': 1, 'houkei-clinic-b': 1, 'mens-supplement': 5, 'nioi-care': 5, 'skincare': 5, 'houkei-goods': 5, 'datsumo-cream': 5, 'aga-item': 5, 'muscle-diet': 3 },
             },
             {
                 label: 'プロに相談・施術してもらいたい',
-                scores: { 'houkei-clinic-a': 5, 'houkei-clinic-b': 5, 'mens-supplement': 1, 'nioi-care': 1, 'skincare': 2, 'houkei-goods': 1, 'datsumo-cream': 1, 'aga-item': 1, 'muscle-diet': 4, 'mens-esthe': 5 },
+                scores: { 'houkei-clinic-a': 5, 'houkei-clinic-b': 5, 'mens-supplement': 1, 'nioi-care': 1, 'skincare': 2, 'houkei-goods': 1, 'datsumo-cream': 1, 'aga-item': 1, 'muscle-diet': 4 },
             },
             {
                 label: 'まずは手軽なものから試したい',
-                scores: { 'houkei-clinic-a': 2, 'houkei-clinic-b': 2, 'mens-supplement': 4, 'nioi-care': 4, 'skincare': 5, 'houkei-goods': 4, 'datsumo-cream': 5, 'aga-item': 5, 'muscle-diet': 3, 'mens-esthe': 2 },
+                scores: { 'houkei-clinic-a': 2, 'houkei-clinic-b': 2, 'mens-supplement': 4, 'nioi-care': 4, 'skincare': 5, 'houkei-goods': 4, 'datsumo-cream': 5, 'aga-item': 5, 'muscle-diet': 3 },
             },
         ],
     },
@@ -150,19 +150,19 @@ export const questions: Question[] = [
         options: [
             {
                 label: '絶対にバレたくない',
-                scores: { 'houkei-clinic-a': 5, 'houkei-clinic-b': 4, 'mens-supplement': 5, 'nioi-care': 5, 'skincare': 4, 'houkei-goods': 5, 'datsumo-cream': 5, 'aga-item': 5, 'muscle-diet': 3, 'mens-esthe': 2 },
+                scores: { 'houkei-clinic-a': 5, 'houkei-clinic-b': 4, 'mens-supplement': 5, 'nioi-care': 5, 'skincare': 4, 'houkei-goods': 5, 'datsumo-cream': 5, 'aga-item': 5, 'muscle-diet': 3 },
             },
             {
                 label: 'できればバレたくない',
-                scores: { 'houkei-clinic-a': 4, 'houkei-clinic-b': 4, 'mens-supplement': 4, 'nioi-care': 4, 'skincare': 4, 'houkei-goods': 4, 'datsumo-cream': 4, 'aga-item': 4, 'muscle-diet': 4, 'mens-esthe': 3 },
+                scores: { 'houkei-clinic-a': 4, 'houkei-clinic-b': 4, 'mens-supplement': 4, 'nioi-care': 4, 'skincare': 4, 'houkei-goods': 4, 'datsumo-cream': 4, 'aga-item': 4, 'muscle-diet': 4 },
             },
             {
                 label: '別に気にしない',
-                scores: { 'houkei-clinic-a': 3, 'houkei-clinic-b': 3, 'mens-supplement': 3, 'nioi-care': 3, 'skincare': 4, 'houkei-goods': 3, 'datsumo-cream': 4, 'aga-item': 4, 'muscle-diet': 4, 'mens-esthe': 4 },
+                scores: { 'houkei-clinic-a': 3, 'houkei-clinic-b': 3, 'mens-supplement': 3, 'nioi-care': 3, 'skincare': 4, 'houkei-goods': 3, 'datsumo-cream': 4, 'aga-item': 4, 'muscle-diet': 4 },
             },
             {
                 label: 'むしろ周りにもすすめたい',
-                scores: { 'houkei-clinic-a': 3, 'houkei-clinic-b': 5, 'mens-supplement': 3, 'nioi-care': 3, 'skincare': 4, 'houkei-goods': 3, 'datsumo-cream': 4, 'aga-item': 4, 'muscle-diet': 5, 'mens-esthe': 5 },
+                scores: { 'houkei-clinic-a': 3, 'houkei-clinic-b': 5, 'mens-supplement': 3, 'nioi-care': 3, 'skincare': 4, 'houkei-goods': 3, 'datsumo-cream': 4, 'aga-item': 4, 'muscle-diet': 5 },
             },
         ],
     },
@@ -172,19 +172,19 @@ export const questions: Question[] = [
         options: [
             {
                 label: '今すぐにでも始めたい',
-                scores: { 'houkei-clinic-a': 5, 'houkei-clinic-b': 4, 'mens-supplement': 5, 'nioi-care': 5, 'skincare': 5, 'houkei-goods': 5, 'datsumo-cream': 5, 'aga-item': 5, 'muscle-diet': 4, 'mens-esthe': 4 },
+                scores: { 'houkei-clinic-a': 5, 'houkei-clinic-b': 4, 'mens-supplement': 5, 'nioi-care': 5, 'skincare': 5, 'houkei-goods': 5, 'datsumo-cream': 5, 'aga-item': 5, 'muscle-diet': 4 },
             },
             {
                 label: '1〜3ヶ月以内に変わりたい',
-                scores: { 'houkei-clinic-a': 5, 'houkei-clinic-b': 5, 'mens-supplement': 4, 'nioi-care': 4, 'skincare': 4, 'houkei-goods': 4, 'datsumo-cream': 4, 'aga-item': 4, 'muscle-diet': 5, 'mens-esthe': 5 },
+                scores: { 'houkei-clinic-a': 5, 'houkei-clinic-b': 5, 'mens-supplement': 4, 'nioi-care': 4, 'skincare': 4, 'houkei-goods': 4, 'datsumo-cream': 4, 'aga-item': 4, 'muscle-diet': 5 },
             },
             {
                 label: '半年くらいかけてじっくり',
-                scores: { 'houkei-clinic-a': 3, 'houkei-clinic-b': 3, 'mens-supplement': 4, 'nioi-care': 3, 'skincare': 3, 'houkei-goods': 3, 'datsumo-cream': 3, 'aga-item': 4, 'muscle-diet': 4, 'mens-esthe': 3 },
+                scores: { 'houkei-clinic-a': 3, 'houkei-clinic-b': 3, 'mens-supplement': 4, 'nioi-care': 3, 'skincare': 3, 'houkei-goods': 3, 'datsumo-cream': 3, 'aga-item': 4, 'muscle-diet': 4 },
             },
             {
                 label: 'いい方法が見つかれば、いつでも',
-                scores: { 'houkei-clinic-a': 3, 'houkei-clinic-b': 3, 'mens-supplement': 4, 'nioi-care': 4, 'skincare': 4, 'houkei-goods': 4, 'datsumo-cream': 4, 'aga-item': 4, 'muscle-diet': 3, 'mens-esthe': 3 },
+                scores: { 'houkei-clinic-a': 3, 'houkei-clinic-b': 3, 'mens-supplement': 4, 'nioi-care': 4, 'skincare': 4, 'houkei-goods': 4, 'datsumo-cream': 4, 'aga-item': 4, 'muscle-diet': 3 },
             },
         ],
     },
@@ -244,12 +244,6 @@ const conditionalReasons: Record<string, ConditionalReason[]> = {
         { condition: (a) => a[0] === 5 && a[4] <= 1, text: '自宅でセルフケアをご希望とのこと。HMBサプリや加圧シャツなら自宅で手軽にボディメイク。オンラインジムなら自宅でプロの指導も受けられます。' },
         { condition: (a) => a[0] === 5 && a[3] === 3, text: '効果重視とのこと。RIZAPなら「結果にコミット」の実績で確実に変われます。遺伝子検査付きのオンラインジムなら、科学的に最適なダイエットプランを提案してもらえます。' },
         { condition: () => true, text: 'HMBサプリ・加圧シャツ・パーソナルジムなど、あなたのレベルに合った方法で理想のカラダを目指せます。自宅ケアからプロの指導まで幅広く対応。' },
-    ],
-    'mens-esthe': [
-        { condition: (a) => a[0] === 5 && a[4] === 2, text: 'プロの施術を受けたいとのこと。ダンディハウスのメンズエステなら、ダイエット・フェイシャル・脱毛の総合ケアを男性専門のサロンで受けられます。体験コースから気軽にスタートできます。' },
-        { condition: (a) => a[2] === 2, text: 'エステ経験があるとのこと。ダンディハウスのパーソナルジムやメンズエステなら、前回以上の効果を実感できるプレミアムなサービスをご用意しています。' },
-        { condition: (a) => a[3] === 3, text: '効果重視とのこと。メンズエステならプロの手技と最新機器で、セルフケアでは実現できない本格的な見た目改善が期待できます。まずは体験コースでその効果を実感してください。' },
-        { condition: () => true, text: '男性専門のエステサロンで、ダイエット・フェイシャル・脱毛の総合ケアをプロの手で。体験コースから気軽に始められます。' },
     ],
 };
 

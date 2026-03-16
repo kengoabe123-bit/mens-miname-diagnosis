@@ -351,43 +351,7 @@ export const services: Service[] = [
         ctaText: '詳細を見る',
         color: '#e67e22',
     },
-    {
-        id: 'mens-esthe',
-        slug: 'mens-esthe',
-        name: 'メンズエステ・美容',
-        nameEn: 'Mens Esthetic',
-        tagline: 'プロの手で見た目を変える。男のエステ体験',
-        description: '男性専門のエステサロン・美容サービス。ダイエット、フェイシャル、脱毛など総合的な見た目改善を、プロの手技と最新機器で実現。体験コースから気軽に始められる。',
-        category: 'メンズエステ',
-        target: 'プロの施術で見た目を改善したい人',
-        targetAge: ['20代', '30代', '40代', '50代'],
-        features: [
-            '男性専門のエステサロン',
-            'ダイエット・フェイシャル・脱毛の総合ケア',
-            'お手頃な体験コースから始められる',
-            '包茎治療などデリケートな悩みにも対応するクリニックあり',
-        ],
-        pros: [
-            'プロの施術で確実な効果が期待できる',
-            '体験コースで気軽に試せる',
-            '総合的な見た目改善プランを提案してもらえる',
-            '男性専門なので気兼ねなく通える',
-        ],
-        cons: [
-            '費用はセルフケアより高い',
-            '定期的な通院が必要',
-            '都市部中心のサービスが多い',
-        ],
-        recommended: [
-            '自分へのご褒美として見た目を磨きたい人',
-            'セルフケアだけでは限界を感じている人',
-            '総合的に見た目を改善したい人',
-            'プロのアドバイスを受けたい人',
-        ],
-        affiliateUrl: 'https://px.a8.net/svt/ejp?a8mat=4AZA42+EF6B36+1OGO+HV7V6',
-        ctaText: '詳細を見る',
-        color: '#884ea0',
-    },
+
 ];
 
 export function getServiceBySlug(slug: string): Service | undefined {
