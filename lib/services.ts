@@ -52,7 +52,7 @@ export const services: Service[] = [
             'まずは相談だけでもしたい人',
         ],
         affiliateUrl: 'https://px.a8.net/svt/ejp?a8mat=4AZGCF+9FYU02+2FG2+9IAJ6',
-        ctaText: '無料カウンセリングを予約する',
+        ctaText: '詳細を見る',
         color: '#8e44ad',
     },
     {
@@ -89,7 +89,7 @@ export const services: Service[] = [
             '痛みに弱い人',
         ],
         affiliateUrl: 'https://px.a8.net/svt/ejp?a8mat=4AZGCF+9ERYSI+2LJS+5YRHE',
-        ctaText: '無料カウンセリングを予約する',
+        ctaText: '詳細を見る',
         color: '#6c3483',
     },
     {
@@ -126,7 +126,7 @@ export const services: Service[] = [
             '日常的にケアしたい人',
         ],
         affiliateUrl: 'https://px.a8.net/svt/ejp?a8mat=4AZGCF+C2MR6Q+2OUY+5YJRM',
-        ctaText: '人気サプリをチェックする',
+        ctaText: '詳細を見る',
         color: '#c0392b',
     },
     {
@@ -163,7 +163,7 @@ export const services: Service[] = [
             '職場や電車で周囲の目が気になる人',
         ],
         affiliateUrl: 'https://px.a8.net/svt/ejp?a8mat=4AZGCF+B5VWWY+2TZO+NTJWY',
-        ctaText: 'ニオイ対策アイテムを見る',
+        ctaText: '詳細を見る',
         color: '#16a085',
     },
     {
@@ -200,7 +200,7 @@ export const services: Service[] = [
             'テカリ・乾燥を改善したい人',
         ],
         affiliateUrl: 'https://px.a8.net/svt/ejp?a8mat=4AZGCF+7ZKORM+4CRM+BWVTE',
-        ctaText: 'スキンケアアイテムを見る',
+        ctaText: '詳細を見る',
         color: '#2980b9',
     },
     {
@@ -237,7 +237,7 @@ export const services: Service[] = [
             'クリニックに行く勇気がまだない人',
         ],
         affiliateUrl: 'https://px.a8.net/svt/ejp?a8mat=4AZGCF+9DL3KY+IJS+66H9E',
-        ctaText: '矯正グッズを詳しく見る',
+        ctaText: '詳細を見る',
         color: '#7d3c98',
     },
     {
@@ -274,7 +274,7 @@ export const services: Service[] = [
             'まずは試してみたい脱毛初心者',
         ],
         affiliateUrl: 'https://px.a8.net/svt/ejp?a8mat=4AZA42+ECSKO2+2UOE+2HB8GI',
-        ctaText: '除毛クリームをチェックする',
+        ctaText: '詳細を見る',
         color: '#d35400',
     },
     {
@@ -311,7 +311,7 @@ export const services: Service[] = [
             '頭皮の環境を整えたい人',
         ],
         affiliateUrl: 'https://px.a8.net/svt/ejp?a8mat=4AZGCF+8QD6ZM+3NZO+1NJK7M',
-        ctaText: '育毛アイテムをチェックする',
+        ctaText: '詳細を見る',
         color: '#1a5276',
     },
     {
@@ -348,7 +348,7 @@ export const services: Service[] = [
             '本気で体を変えたい人',
         ],
         affiliateUrl: 'https://px.a8.net/svt/ejp?a8mat=3H3U4S+7GITEQ+3D3Q+62MDE',
-        ctaText: 'ボディメイクを始める',
+        ctaText: '詳細を見る',
         color: '#e67e22',
     },
     {
@@ -385,7 +385,7 @@ export const services: Service[] = [
             'プロのアドバイスを受けたい人',
         ],
         affiliateUrl: 'https://px.a8.net/svt/ejp?a8mat=4AZA42+EF6B36+1OGO+HV7V6',
-        ctaText: 'エステ体験を予約する',
+        ctaText: '詳細を見る',
         color: '#884ea0',
     },
 ];
