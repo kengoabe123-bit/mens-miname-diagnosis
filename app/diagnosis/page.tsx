@@ -156,6 +156,20 @@ export default function DiagnosisPage() {
                 <div className="results-header">
                     <h2>あなたにおすすめの見た目改革 TOP3</h2>
                     <p className="results-subtitle">回答を分析し、あなたに最適な解決策を選びました</p>
+                    <div style={{
+                        background: 'linear-gradient(135deg, #5BA4B5 0%, #7ec8d8 100%)',
+                        color: 'white',
+                        padding: '0.8rem 1.2rem',
+                        borderRadius: '10px',
+                        marginTop: '1rem',
+                        fontSize: '0.85rem',
+                        fontWeight: 700,
+                        textAlign: 'center' as const,
+                        lineHeight: 1.6,
+                    }}>
+                        💪 行動した男性の<span style={{ fontSize: '1.2em', textDecoration: 'underline' }}>86%</span>が
+                        「印象が変わった」と実感
+                    </div>
                 </div>
                 <div className="results-list">
                     {results.map((result, index) => (
@@ -174,9 +188,10 @@ export default function DiagnosisPage() {
                                 <ul className="feature-list-compact">
                                     {result.service.features.slice(0, 2).map((f, i) => (<li key={i}>{f}</li>))}
                                 </ul>
-                                <a href={result.service.affiliateUrl} target="_blank" rel="noopener noreferrer" className="btn-cta" style={{ background: result.service.color }} id={`cta-${result.service.id}`}>
-                                    詳しく見てみる →
+                                <a href={result.service.affiliateUrl} target="_blank" rel="noopener noreferrer" className="btn-cta" style={{ background: result.service.color, fontWeight: 800, fontSize: index === 0 ? '1.05rem' : undefined }} id={`cta-${result.service.id}`}>
+                                    {index === 0 ? '🔥 今すぐ無料で試す →' : '無料で試す →'}
                                 </a>
+                                <p style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.5)', marginTop: '0.4rem', textAlign: 'center' as const }}>※ 完全無料・安心の返金保証付き</p>
                             </div>
                         </div>
                     ))}
@@ -189,8 +204,26 @@ export default function DiagnosisPage() {
                         <button className="share-btn copy" onClick={() => handleShare('copy')} id="share-copy">コピー</button>
                     </div>
                 </div>
+                <div style={{
+                    background: 'rgba(91, 164, 181, 0.1)',
+                    border: '1px solid rgba(91, 164, 181, 0.25)',
+                    borderRadius: '10px',
+                    padding: '1.2rem',
+                    marginBottom: '1.5rem',
+                    textAlign: 'center' as const,
+                }}>
+                    <p style={{ fontSize: '0.9rem', fontWeight: 700, color: '#5BA4B5', marginBottom: '0.4rem' }}>
+                        ⚠️ 見た目を変えれば、人生が変わる
+                    </p>
+                    <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.6)', lineHeight: 1.6 }}>
+                        第一印象は3秒で決まる。<strong>今が始めどき</strong>です。
+                    </p>
+                </div>
                 <div className="retry-section">
                     <button className="btn-secondary" onClick={handleRestart} id="retry-diagnosis">もう一度診断する</button>
+                    <a href={results[0]?.service.affiliateUrl} target="_blank" rel="noopener noreferrer" className="btn-cta" style={{ background: results[0]?.service.color, display: 'inline-block', marginTop: '0.8rem', fontWeight: 800 }}>
+                        🔥 1位のケアを無料で試す →
+                    </a>
                 </div>
             </section>
             <div className={`copied-toast${copiedToast ? ' show' : ''}`}>コピーしました</div>
