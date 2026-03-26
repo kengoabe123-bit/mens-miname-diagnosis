@@ -17,6 +17,12 @@ export default function DiagnosisPage() {
     const [copiedToast, setCopiedToast] = useState(false);
     const animatingRef = useRef(false);
 
+    // === Conversion Boosters State ===
+    const [showStickyCtaBar, setShowStickyCtaBar] = useState(false);
+    const [showExitPopup, setShowExitPopup] = useState(false);
+    const [exitPopupShown, setExitPopupShown] = useState(false);
+    const [countdown, setCountdown] = useState({ h: 0, m: 0, s: 0 });
+
     useEffect(() => {
         if (phase !== 'results' || results.length === 0) return;
         const targetRates = results.map((r) => r.matchRate);
@@ -40,6 +46,48 @@ export default function DiagnosisPage() {
             const timer = setTimeout(() => setShowConfetti(false), 4000);
             return () => clearTimeout(timer);
         }
+    }, [phase]);
+
+
+    // === Sticky CTA: show when scrolled past first CTA ===
+    useEffect(() => {
+        if (phase !== 'results') return;
+        const onScroll = () => { setShowStickyCtaBar(window.scrollY > 600); };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
+    }, [phase]);
+
+    // === Exit Intent Popup ===
+    useEffect(() => {
+        if (phase !== 'results' || exitPopupShown) return;
+        const onMouseLeave = (e: MouseEvent) => {
+            if (e.clientY <= 0 && !exitPopupShown) { setShowExitPopup(true); setExitPopupShown(true); }
+        };
+        const mobileTimer = setTimeout(() => {
+            if (!exitPopupShown) { setShowExitPopup(true); setExitPopupShown(true); }
+        }, 30000);
+        document.addEventListener('mouseleave', onMouseLeave);
+        return () => { document.removeEventListener('mouseleave', onMouseLeave); clearTimeout(mobileTimer); };
+    }, [phase, exitPopupShown]);
+
+    // === Countdown Timer ===
+    useEffect(() => {
+        if (phase !== 'results') return;
+        const KEY = 'cv_mens_start';
+        let start = localStorage.getItem(KEY);
+        if (!start) { start = String(Date.now()); localStorage.setItem(KEY, start); }
+        const endTime = Number(start) + 24 * 60 * 60 * 1000;
+        const tick = () => {
+            const remaining = Math.max(0, endTime - Date.now());
+            if (remaining <= 0) localStorage.removeItem(KEY);
+            const h = Math.floor(remaining / 3600000);
+            const m = Math.floor((remaining % 3600000) / 60000);
+            const s = Math.floor((remaining % 60000) / 1000);
+            setCountdown({ h, m, s });
+        };
+        tick();
+        const interval = setInterval(tick, 1000);
+        return () => clearInterval(interval);
     }, [phase]);
 
     const handleAnswer = useCallback(
@@ -226,6 +274,109 @@ export default function DiagnosisPage() {
                     </a>
                 </div>
             </section>
+            {/* === スティッキーCTA === */}
+            {phase === 'results' && showStickyCtaBar && results.length > 0 && (
+                <div style={{
+                    position: 'fixed',
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    background: 'linear-gradient(135deg, #5BA4B5 0%, #5BA4B5dd 100%)',
+                    padding: '0.8rem 1rem',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '0.8rem',
+                    zIndex: 1000,
+                    boxShadow: '0 -4px 20px rgba(91, 164, 181, 0.4)',
+                }}>
+                    <span style={{ color: 'white', fontSize: '0.85rem', fontWeight: 700 }}>
+                        1位: {results[0]?.service.name}
+                    </span>
+                    <a
+                        href={results[0]?.service.affiliateUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                            background: 'white',
+                            color: '#5BA4B5',
+                            padding: '0.5rem 1.2rem',
+                            borderRadius: '25px',
+                            fontWeight: 900,
+                            fontSize: '0.85rem',
+                            textDecoration: 'none',
+                            whiteSpace: 'nowrap' as const,
+                        }}
+                    >
+                        🔥 ケアを無料で試す →
+                    </a>
+                </div>
+            )}
+            {/* === 離脱防止ポップアップ === */}
+            {showExitPopup && results.length > 0 && (
+                <div style={{
+                    position: 'fixed',
+                    top: 0, left: 0, right: 0, bottom: 0,
+                    background: 'rgba(0,0,0,0.7)',
+                    zIndex: 2000,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    padding: '1rem',
+                }} onClick={() => setShowExitPopup(false)}>
+                    <div onClick={(e: React.MouseEvent) => e.stopPropagation()} style={{
+                        background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+                        borderRadius: '16px',
+                        padding: '2rem 1.5rem',
+                        maxWidth: '380px',
+                        width: '100%',
+                        textAlign: 'center' as const,
+                        border: '2px solid rgba(91, 164, 181, 0.3)',
+                        boxShadow: '0 20px 60px rgba(0,0,0,0.5)',
+                    }}>
+                        <div style={{ fontSize: '2.5rem', marginBottom: '0.8rem' }}>💪</div>
+                        <h3 style={{ color: 'white', fontSize: '1.2rem', fontWeight: 800, marginBottom: '0.8rem' }}>
+                            見た目を変えれば人生が変わる
+                        </h3>
+                        <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.85rem', lineHeight: 1.6, marginBottom: '1.2rem' }}>
+                            第一印象は3秒で決まります。<br />
+                            <strong style={{ color: '#5BA4B5' }}>今なら無料</strong>で始められます！
+                        </p>
+                        <a
+                            href={results[0]?.service.affiliateUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                                display: 'block',
+                                background: 'linear-gradient(135deg, #5BA4B5 0%, #5BA4B5dd 100%)',
+                                color: 'white',
+                                padding: '0.9rem',
+                                borderRadius: '12px',
+                                fontWeight: 900,
+                                fontSize: '1rem',
+                                textDecoration: 'none',
+                                marginBottom: '0.8rem',
+                            }}
+                        >
+                            🔥 無料でケア体験 →
+                        </a>
+                        <button
+                            onClick={() => setShowExitPopup(false)}
+                            style={{
+                                background: 'none',
+                                border: 'none',
+                                color: 'rgba(255,255,255,0.4)',
+                                fontSize: '0.75rem',
+                                cursor: 'pointer',
+                                padding: '0.5rem',
+                            }}
+                        >
+                            閉じる（今のままでいい）
+                        </button>
+                    </div>
+                </div>
+            )}
+
             <div className={`copied-toast${copiedToast ? ' show' : ''}`}>コピーしました</div>
         </>
     );
