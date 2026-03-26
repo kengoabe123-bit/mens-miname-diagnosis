@@ -49,6 +49,17 @@ export default function Home() {
         }}>
           ※ 登録不要・完全無料・結果はすぐに表示されます
         </p>
+      
+        <Link href="/services" style={{
+          display: 'block',
+          fontSize: '0.75rem',
+          color: 'rgba(255,255,255,0.5)',
+          textDecoration: 'underline',
+          textAlign: 'center' as const,
+          marginTop: '1rem',
+        }}>
+          サービス一覧を見る →
+        </Link>
       </div>
     </section>
   );
