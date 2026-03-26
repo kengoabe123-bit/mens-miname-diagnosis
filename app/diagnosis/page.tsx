@@ -244,6 +244,68 @@ export default function DiagnosisPage() {
                         </div>
                     ))}
                 </div>
+                                {/* === サービス比較表 === */}
+                <div style={{
+                    marginBottom: '2rem',
+                }}>
+                    <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'white', textAlign: 'center' as const, marginBottom: '1rem' }}>
+                        📊 TOP3サービス比較
+                    </h3>
+                    <div style={{ display: 'flex', flexDirection: 'column' as const, gap: '0.5rem' }}>
+                        {results.slice(0, 3).map((result: DiagnosisResult, idx: number) => (
+                            <div key={idx} style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                background: idx === 0 ? '#5BA4B522' : 'rgba(255,255,255,0.03)',
+                                border: idx === 0 ? '2px solid #5BA4B555' : '1px solid rgba(255,255,255,0.08)',
+                                borderRadius: '10px',
+                                padding: '0.8rem',
+                                gap: '0.8rem',
+                            }}>
+                                <div style={{
+                                    minWidth: '28px',
+                                    height: '28px',
+                                    borderRadius: '50%',
+                                    background: idx === 0 ? '#5BA4B5' : 'rgba(255,255,255,0.15)',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    fontSize: '0.75rem',
+                                    fontWeight: 900,
+                                    color: 'white',
+                                }}>
+                                    {idx + 1}
+                                </div>
+                                <div style={{ flex: 1, minWidth: 0 }}>
+                                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'white', marginBottom: '2px' }}>
+                                        {result.service.name}
+                                        {idx === 0 && <span style={{ fontSize: '0.65rem', background: '#5BA4B5', color: 'white', padding: '1px 6px', borderRadius: '4px', marginLeft: '6px' }}>迷ったらコレ!</span>}
+                                    </div>
+                                    <div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.5)' }}>
+                                        {result.service.category} · {result.service.features[0]}
+                                    </div>
+                                </div>
+                                <a
+                                    href={result.service.affiliateUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{
+                                        background: idx === 0 ? '#5BA4B5' : 'rgba(255,255,255,0.1)',
+                                        color: 'white',
+                                        padding: '0.4rem 0.8rem',
+                                        borderRadius: '20px',
+                                        fontSize: '0.7rem',
+                                        fontWeight: 700,
+                                        textDecoration: 'none',
+                                        whiteSpace: 'nowrap' as const,
+                                    }}
+                                >
+                                    無料で試す →
+                                </a>
+                            </div>
+                        ))}
+                    </div>
+                </div>
                 <div className="share-section">
                     <h3>診断結果をシェアする</h3>
                     <div className="share-buttons">
