@@ -239,7 +239,7 @@ export default function DiagnosisPage() {
                                 <a href={result.service.affiliateUrl} target="_blank" rel="noopener noreferrer" className="btn-cta" style={{ background: result.service.color, fontWeight: 800, fontSize: index === 0 ? '1.05rem' : undefined }} id={`cta-${result.service.id}`}>
                                     {index === 0 ? '🔥 今すぐ無料で試す →' : '無料で試す →'}
                                 </a>
-                                <p style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.5)', marginTop: '0.4rem', textAlign: 'center' as const }}>※ 完全無料・安心の返金保証付き</p>
+                                <p style={{ fontSize: '0.7rem', color: '#555', marginTop: '0.4rem', textAlign: 'center' as const }}>※ 完全無料・安心の返金保証付き</p>
                             </div>
                         </div>
                     ))}
@@ -248,7 +248,7 @@ export default function DiagnosisPage() {
                 <div style={{
                     marginBottom: '2rem',
                 }}>
-                    <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'white', textAlign: 'center' as const, marginBottom: '1rem' }}>
+                    <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#1a1a2e', textAlign: 'center' as const, marginBottom: '1rem' }}>
                         📊 TOP3サービス比較
                     </h3>
                     <div style={{ display: 'flex', flexDirection: 'column' as const, gap: '0.5rem' }}>
@@ -256,8 +256,8 @@ export default function DiagnosisPage() {
                             <div key={idx} style={{
                                 display: 'flex',
                                 alignItems: 'center',
-                                background: idx === 0 ? '#5BA4B522' : 'rgba(255,255,255,0.03)',
-                                border: idx === 0 ? '2px solid #5BA4B555' : '1px solid rgba(255,255,255,0.08)',
+                                background: idx === 0 ? '#5BA4B522' : '#f7f8fa',
+                                border: idx === 0 ? '2px solid #5BA4B555' : '1px solid #e0e0e0',
                                 borderRadius: '10px',
                                 padding: '0.8rem',
                                 gap: '0.8rem',
@@ -266,22 +266,22 @@ export default function DiagnosisPage() {
                                     minWidth: '28px',
                                     height: '28px',
                                     borderRadius: '50%',
-                                    background: idx === 0 ? '#5BA4B5' : 'rgba(255,255,255,0.15)',
+                                    background: idx === 0 ? '#e91e63' : '#e0e0e0',
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
                                     fontSize: '0.75rem',
                                     fontWeight: 900,
-                                    color: 'white',
+                                    color: idx === 0 ? 'white' : '#333',
                                 }}>
                                     {idx + 1}
                                 </div>
                                 <div style={{ flex: 1, minWidth: 0 }}>
-                                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'white', marginBottom: '2px' }}>
+                                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#1a1a2e', marginBottom: '2px' }}>
                                         {result.service.name}
                                         {idx === 0 && <span style={{ fontSize: '0.65rem', background: '#5BA4B5', color: 'white', padding: '1px 6px', borderRadius: '4px', marginLeft: '6px' }}>迷ったらコレ!</span>}
                                     </div>
-                                    <div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.5)' }}>
+                                    <div style={{ fontSize: '0.7rem', color: '#555' }}>
                                         {result.service.category} · {result.service.features[0]}
                                     </div>
                                 </div>
@@ -290,7 +290,7 @@ export default function DiagnosisPage() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={{
-                                        background: idx === 0 ? '#5BA4B5' : 'rgba(255,255,255,0.1)',
+                                        background: idx === 0 ? '#e91e63' : '#e91e63',
                                         color: 'white',
                                         padding: '0.4rem 0.8rem',
                                         borderRadius: '20px',
@@ -325,7 +325,7 @@ export default function DiagnosisPage() {
                     <p style={{ fontSize: '0.9rem', fontWeight: 700, color: '#5BA4B5', marginBottom: '0.4rem' }}>
                         ⚠️ 見た目を変えれば、人生が変わる
                     </p>
-                    <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.6)', lineHeight: 1.6 }}>
+                    <p style={{ fontSize: '0.8rem', color: '#888', lineHeight: 1.6 }}>
                         第一印象は3秒で決まる。<strong>今が始めどき</strong>です。
                     </p>
                 </div>
@@ -387,7 +387,7 @@ export default function DiagnosisPage() {
                     padding: '1rem',
                 }} onClick={() => setShowExitPopup(false)}>
                     <div onClick={(e: React.MouseEvent) => e.stopPropagation()} style={{
-                        background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+                        background: '#f8f9fa',
                         borderRadius: '16px',
                         padding: '2rem 1.5rem',
                         maxWidth: '380px',
@@ -397,10 +397,10 @@ export default function DiagnosisPage() {
                         boxShadow: '0 20px 60px rgba(0,0,0,0.5)',
                     }}>
                         <div style={{ fontSize: '2.5rem', marginBottom: '0.8rem' }}>💪</div>
-                        <h3 style={{ color: 'white', fontSize: '1.2rem', fontWeight: 800, marginBottom: '0.8rem' }}>
+                        <h3 style={{ color: '#1a1a2e', fontSize: '1.2rem', fontWeight: 800, marginBottom: '0.8rem' }}>
                             見た目を変えれば人生が変わる
                         </h3>
-                        <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.85rem', lineHeight: 1.6, marginBottom: '1.2rem' }}>
+                        <p style={{ color: '#555', fontSize: '0.85rem', lineHeight: 1.6, marginBottom: '1.2rem' }}>
                             第一印象は3秒で決まります。<br />
                             <strong style={{ color: '#5BA4B5' }}>今なら無料</strong>で始められます！
                         </p>
@@ -427,7 +427,7 @@ export default function DiagnosisPage() {
                             style={{
                                 background: 'none',
                                 border: 'none',
-                                color: 'rgba(255,255,255,0.4)',
+                                color: '#888',
                                 fontSize: '0.75rem',
                                 cursor: 'pointer',
                                 padding: '0.5rem',
