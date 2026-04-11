@@ -3,12 +3,16 @@ import { Noto_Sans_JP } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { WebsiteSchema } from '@/components/StructuredData';
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
   display: 'swap',
 });
+
+const SITE_NAME = 'MensFix';
+const SITE_URL = 'https://mens-miname-diagnosis.vercel.app';
 
 export const metadata: Metadata = {
   title: 'MensFix - あなたの「見た目の悩み」に最適な解決策を診断',
@@ -28,6 +32,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ja">
       <body className={notoSansJP.className}>
+        <WebsiteSchema
+          siteName={SITE_NAME}
+          siteUrl={SITE_URL}
+          description="男性の見た目の悩みに最適な解決策を見つける無料診断サービス"
+        />
         <Header />
         {children}
         <Footer />
