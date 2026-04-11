@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: 'MensFix - あなたの「見た目の悩み」に最適な解決策を診断',
   description: '60秒の無料診断で、ニキビ・薄毛・脱毛・歯並び・デリケートな悩みに最適なクリニックが見つかる。7つの質問であなたにピッタリの解決策を提案します。',
   verification: {
-    google: 'Mlqh5zm0FnokIIIavzUIGMbvBVSdL-3x8VQhTys_fuQ',
+    google: 'MIqh5zm0FnokIIIavzUIGMbvBVSdL-3x8VQhTys_fuQ',
   },
   openGraph: {
     title: 'MensFix - あなたの「見た目の悩み」に最適な解決策を診断',
