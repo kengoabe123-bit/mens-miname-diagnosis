@@ -18,9 +18,9 @@ export default function Home() {
           <p style={{ fontSize: '0.9rem', fontWeight: 700, color: 'white', marginBottom: '0.8rem', textAlign: 'center' as const }}>
             こんな悩み、ありませんか？
           </p>
-          <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.65)', lineHeight: 1.8, margin: '0.3rem 0' }}>「第一印象で損してる気がする…」</p>
-          <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.65)', lineHeight: 1.8, margin: '0.3rem 0' }}>「何から始めればいいかわからない」</p>
-          <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.65)', lineHeight: 1.8, margin: '0.3rem 0' }}>「自分に似合うスタイルがわからない」</p>
+          <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.95)', lineHeight: 1.8, margin: '0.3rem 0' }}>「第一印象で損してる気がする…」</p>
+          <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.95)', lineHeight: 1.8, margin: '0.3rem 0' }}>「何から始めればいいかわからない」</p>
+          <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.95)', lineHeight: 1.8, margin: '0.3rem 0' }}>「自分に似合うスタイルがわからない」</p>
         </div>
         {/* ソーシャルプルーフ */}
         <p style={{

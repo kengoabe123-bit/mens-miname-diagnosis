@@ -12,7 +12,7 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 const SITE_NAME = 'MensFix';
-const SITE_URL = 'https://mens-miname-diagnosis.pages.dev';
+const SITE_URL = 'https://mensfix.com';
 
 export const metadata: Metadata = {
   title: 'MensFix - あなたの「見た目の悩み」に最適な解決策を診断',

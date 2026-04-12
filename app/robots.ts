@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://mens-miname-diagnosis.pages.dev/sitemap.xml',
+    sitemap: 'https://mensfix.com/sitemap.xml',
   };
 }
