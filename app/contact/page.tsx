@@ -14,9 +14,13 @@ export default function ContactPage() {
 
         <form
           className="contact-form"
-          action="https://formspree.io/f/placeholder"
+          action="https://formsubmit.co/banana.sakulazaka123@gmail.com"
           method="POST"
         >
+          <input type="hidden" name="_subject" value="【MensFix】お問い合わせ" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+
           <div className="form-group">
             <label htmlFor="contact-name">お名前（ニックネーム可）</label>
             <input type="text" id="contact-name" name="name" required placeholder="例：太郎" />
